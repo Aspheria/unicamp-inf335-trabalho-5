@@ -10,7 +10,7 @@ pipeline {
         stage('Build') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/helioVictor/inf335.atividade-5-1'
+                git 'https://github.com/Aspheria/unicamp-inf335-trabalho-5'
 
                 // Run Maven on a Unix agent.
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
